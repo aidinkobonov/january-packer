@@ -28,11 +28,7 @@
           "sudo chown -R apacher:apache /var/www/html/*",
           "sudo systemctl enable httpd"
          ]
-        },
-        {
-        "type": "file",
-        "source": "test_file",
-        "destination": "/tpm/test_file"
         }
+        
     ]
   }
