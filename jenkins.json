@@ -16,7 +16,7 @@
           "sudo yum install jenkins -y",
           "sudo yum install java  -y", 
           "yum install java-1.8.0-openjdk  -y ",
-          "systemctl enable jenkins"
+          "sudo systemctl enable jenkins"
          ]
         }]
     }
