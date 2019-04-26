@@ -7,7 +7,8 @@
       "ssh_username": "ec2-user",
       "ami_name": "wordpress-{{timestamp}}"
     }],
-    "provisioners": [{
+    "provisioners": [
+        {
         "type": "shell",
         "inline": [
           "sudo yum update -y",
@@ -18,12 +19,12 @@
           "sudo unzip latest.zip",
           "sudo rsync -avP ~/wordpress/ /var/ww/html",
           "sudo chown -R apacher:apache /var/www/html/*"
-
-        ],
+         ]
+        },
+        {
         "type": "file",
         "source": "test_file",
         "destination": "/tpm/test_file"
-
-                  
-    }]
+        }
+    ]
   }
